@@ -1,0 +1,10 @@
+# Virtual environment for the project
+astra-env 
+# Python temporary files
+**__pycache__
+# IDE settings
+.vscode
+# TEST temport files
+**.pytest_cache
+# Historical Data
+**historical_data
