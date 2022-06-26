@@ -2,6 +2,11 @@ import yfinance as yf
 import settings
 
 def fetch_historical_data(ticker_list):
+	"""Fetches historical data for the provided tickers and store them in HISTORICAL_DATA_DIRECTORY
+
+	Args:
+		ticker_list (list of strings): List containing symbols of the stocks for downloading historical data
+	"""	
 	data = yf.download(
 		tickers=ticker_list,
 		threads=True,
