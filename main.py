@@ -17,7 +17,6 @@ class Window(Ui_MainWindow, QMainWindow):
         self.graph = LiveGraphWidget(self.timer)     # Widget for live graphs
         self.horizontalLayout_Main.addWidget(self.graph)
         self.graph.show()
-        self.timer.start(50)
         
         self.connectSignalSlots()
         
@@ -28,7 +27,7 @@ class Window(Ui_MainWindow, QMainWindow):
         if self.timer.isActive():
             self.timer.stop()
         else:
-            self.timer.start(50)
+            self.timer.start(settings.APPLICATION_REFRESH_TIME)
 
 
 if __name__ == '__main__':
