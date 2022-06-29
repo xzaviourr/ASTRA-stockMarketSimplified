@@ -8,3 +8,9 @@ astra-env
 **.pytest_cache
 # Historical Data
 **historical_data
+# Broker credentials
+**broker_credentials.json
+# Test runner
+test_runner.py
+# Scrip master
+**scrip_master.csv
